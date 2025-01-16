@@ -5,6 +5,12 @@ use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('test', function () {
+    $job = \App\Models\Job::first();
+
+    return 'done';
+});
+
 Route::view('/', 'home');
 Route::view('/contact', 'contact');
 
